@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/84ab98c196.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>SloTheZ</title>
+
+    <!-- font -->
+  </head>
+  <body class="bg-cyan-50">
+    <header class="relative z-50">
+      <div class="w-full flex justify-center items-center relative sm:top-6 h-14">
+        <div class="flex justify-between bg-gray-700 relative items-center w-full sm:w-[90%] px-6 md:px-8 lg:px-10 sm:rounded-full h-full">
+          <!-- Brand -->
+          <span class="md:text-4xl text-3xl text-white font-viga"><a href="#">SloTheZ</a></span>
+          <!-- Menu List -->
+          <div class="hidden sm:block lg:text-xl md:text-lg text-white w-1/2 2xl:w-1/4 xl:w-1/3 lg:w-2/5 h-full">
+            <ul class="flex justify-between h-full items-center font-urban font-light">
+              <a href="#about" class="px-2 h-full flex items-center hover:text-slate-300 active:text-slate-400 transition-colors ease-in duration-100">About Me</a>
+              <a href="#porto" class="px-2 h-full flex items-center hover:text-slate-300 active:text-slate-400 transition-colors ease-in duration-100">Projects</a>
+              <a href="#contact" class="px-2 h-full flex items-center hover:text-slate-300 active:text-slate-400 transition-colors ease-in duration-100">Contact Me</a>
+            </ul>
+          </div>
+          <!-- Menu Button -->
+          <button id="btnmenu" class="sm:hidden absolute right-6 text-2xl active:text-3xl transition-all duration-300 ease-in-out text-white w-14 h-14">
+            <span class="sr-only">Open main menu</span>
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="w-full hidden sm:hidden absolute top-10 z-50" id="navbarmobile">
+        <ul class="flex flex-col p-4 mt-4 rounded-b-lg bg-gray-700 text-white font-urban font-medium">
+          <li id="btnabout">
+            <a href="#about" class="block py-2 pl-3 pr-4 rounded hover:text-slate-300 active:text-slate-400 transition-colors ease-in duration-100" aria-current="page">About Me</a>
+          </li>
+          <li id="btnporto">
+            <a href="#porto" class="block py-2 pl-3 pr-4 rounded hover:text-slate-300 active:text-slate-400 transition-colors ease-in duration-100">Projects</a>
+          </li>
+          <li id="btncontact">
+            <a href="#contact" class="block py-2 pl-3 pr-4 rounded hover:text-slate-300 active:text-slate-400 transition-colors ease-in duration-100">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- About -->
+      <section class="flex w-100% h-[500px] sm:h-[350px] lg:h-[500px] sm:mt-8 relative md:static">
+        <div class="w-3/5 h-full pl-8 xl:pl-0 flex justify-center absolute z-10 md:static md:flex-1" id="about">
+          <!-- Text Left -->
+          <div class="w-full xl:w-4/5 h-full flex flex-col justify-center">
+            <h1 class="lg:text-4xl sm:text-3xl text-2xl font-urban font-semibold text-gray-800" data-aos="zoom-out-up">Hi,</h1>
+            <p class="font-urban text-gray-800" data-aos="zoom-out-down">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, maiores quam? Minus ad consectetur voluptatem labore! Sapiente mollitia illo, architecto eligendi necessitatibus aut esse. Consequuntur, voluptatem quos
+              explicabo sed, deleniti quam impedit, nulla voluptatibus fuga debitis possimus ipsum quas. Eius, molestias consequuntur.
+            </p>
+            <!-- Social Media -->
+            <div class="w-[120px] lg:w-[148px] h-8 lg:h-11 flex relative items-center justify-center mt-6">
+              <!-- Facebook -->
+              <span class="absolute w-8 lg:w-10 flex items-center justify-center left-0" data-aos="fade-up" data-aos-duration="1500">
+                <a href="#" class="text-2xl hover:text-3xl lg:text-3xl lg:hover:text-4xl lg:active:text-3xl active:text-2xl text-gray-800 transition-all ease-out duration-300"><i class="fa-brands fa-facebook"></i></a>
+              </span>
+              <!-- Twitter -->
+              <span class="absolute w-8 lg:w-10 flex items-center justify-center" data-aos-delay="100" data-aos="fade-up" data-aos-duration="1500">
+                <a href="#" class="text-2xl hover:text-3xl lg:text-3xl lg:hover:text-4xl lg:active:text-3xl active:text-2xl text-gray-800 transition-all ease-out duration-300"><i class="fa-brands fa-twitter"></i></a>
+              </span>
+              <!-- Instagram -->
+              <span class="absolute w-8 lg:w-10 flex items-center justify-center right-0" data-aos-delay="200" data-aos="fade-up" data-aos-duration="1500">
+                <a href="https://www.instagram.com/wahyuprayoga03/" target="_blank" class="text-2xl hover:text-3xl lg:text-3xl lg:hover:text-4xl lg:active:text-3xl active:text-2xl text-gray-800 transition-all ease-out duration-300"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- Profile Picture  -->
+        <div class="profiles absolute inset-y-0 right-0 flex justify-center items-center md:static md:w-1/2 lg:w-2/5">
+          <img src="/public/asset/profile2.jpeg" alt="ProfilePicture" class="w-60 h-60 lg:w-72 lg:h-72 object-cover rounded-full" />
+        </div>
+      </section>
+      <!-- Portfolio -->
+      <section>
+        <!-- Judul -->
+        <div class="bg-slate-700 flex justify-center items-center" id="porto">
+          <h1 id="judulPorto" class="text-3xl font-viga font-semibold text-cyan-50 py-4 underline" data-aos="zoom-in-up">My Portfolio</h1>
+        </div>
+        <!-- Container Portfolio -->
+        <div class="bg-slate-700 w-full grid gap-y-4 pb-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4 justify-items-center">
+          <!-- Card 1 -->
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1500">
+            <a href="#">
+              <img class="rounded-t-lg" src="/public/asset/foto1.jpg" alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1500">
+            <a href="#">
+              <img class="rounded-t-lg" src="/public/asset/foto1.jpg" alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1500">
+            <a href="#">
+              <img class="rounded-t-lg" src="/public/asset/foto1.jpg" alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1500">
+            <a href="#">
+              <img class="rounded-t-lg" src="/public/asset/foto1.jpg" alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+              <a
+                href="#"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              >
+                Read more
+                <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Me -->
+      <section>
+        <!-- Judul -->
+        <div class="bg-white flex justify-center items-center" id="contact">
+          <h1 class="text-3xl font-viga font-semibold text-gray-800 underline py-4" data-aos="zoom-in-up">Contact</h1>
+        </div>
+        <!-- Form Contact -->
+        <div class="flex justify-center p-5 bg-white">
+          <!-- Allert -->
+          <div class="w-full sm:w-3/4 md:w-3/5 lg:w-2/4 xl:w-2/5">
+            <div id="alert" class="flex invisible p-4 mb-4 rounded-lg bg-green-200" role="alert">
+              <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-green-800" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path>
+              </svg>
+              <span class="sr-only">Info</span>
+              <div class="ml-3 text-sm font-medium font-urban text-green-700 dark:text-green-800"><strong>Thank you!</strong> we have received your message</div>
+              <button type="button" class="btn-close ml-auto -mx-1.5 -my-1.5 rounded-lg focus:ring-2 focus:ring-green-400 p-1.5 inline-flex h-8 w-8 bg-green-200text-green-600 hover:bg-green-300" aria-label="Close">
+                <span class="sr-only">Close</span>
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <form name="submit-to-google-sheet ">
+              <!-- UserName -->
+              <div class="relative z-0 mb-6 w-full group" data-aos="fade-down">
+                <input
+                  autocomplete="off"
+                  type="text"
+                  name="nama"
+                  id="nama"
+                  class="block py-2.5 px-0 w-full text-sm font-medium font-urban text-gray-800 bg-transparent border-0 border-b-2 appearance-none border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  placeholder=" "
+                  required
+                />
+                <label
+                  for="nama"
+                  class="peer-focus:font-medium absolute text-sm font-urban text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >Enter your name</label
+                >
+              </div>
+              <!-- Email -->
+              <div class="relative z-0 mb-6 w-full group" data-aos="fade-down">
+                <input
+                  autocomplete="off"
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="block py-2.5 px-0 w-full text-sm font-medium font-urban text-gray-800 bg-transparent border-0 border-b-2 appearance-none border-gray-600 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  placeholder=" "
+                  required
+                />
+                <label
+                  for="email"
+                  class="peer-focus:font-medium absolute text-sm font-urban text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >Email address</label
+                >
+              </div>
+              <!-- Message -->
+              <div class="mb-6" data-aos="fade-down">
+                <label for="message" class="block mb-2 text-sm font-semibold font-urban text-gray-500">Your message</label>
+                <textarea
+                  autocomplete="off"
+                  id="message"
+                  rows="4"
+                  name="pesan"
+                  class="block p-2.5 w-full text-sm font-urban text-white rounded-lg border-2 bg-slate-700 border-blue-700 placeholder-gray-400 focus:outline-none focus:ring-4 focus:ring-blue-300"
+                  placeholder="Leave a comment..."
+                ></textarea>
+                <!-- Button Submit -->
+              </div>
+              <!-- Button -->
+              <button
+                type="submit"
+                class="btn-kirim text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+                data-aos="fade-down"
+                data-aos-anchor-placement="top-bottom"
+              >
+                Submit
+              </button>
+              <button disabled type="button" class="hidden btn-loading cursor-wait text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
+                <svg role="status" class="inline mr-3 w-4 h-4 text-white animate-spin" viewBox="0 0 100 101" fill="none">
+                  <path
+                    d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                    fill="#E5E7EB"
+                  />
+                  <path
+                    d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Loading...
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <section class="w-full h-14 bg-gray-700 flex items-center justify-center">
+        <h1 class="text-cyan-50 font-urban" id="date"></h1>
+      </section>
+    </main>
+    <!-- GSAP Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script>
+      gsap.from(".profiles img", { duration: 2, y: -150, opacity: 0, ease: "elastic" });
+    </script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+    <!-- Date Footer -->
+    <script>
+      const d = new Date();
+      let year = d.getFullYear();
+      let copy = "©" + " " + year;
+      document.getElementById("date").innerHTML = copy;
+    </script>
+    <!-- Form -->
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwEQH74y5KoETxggfMvsC4w2aKwnrxwMQBIFCUjx4iudIrwi-NUjXt1hilTqcrR35yGOQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const btnkirim = document.querySelector(".btn-kirim");
+      const btnloading = document.querySelector(".btn-loading");
+      const alert = document.querySelector("#alert");
+      const btnclose = document.querySelector(".btn-close");
+
+      function alertClose() {
+        alert.classList.toggle("invisible");
+      }
+      btnclose.addEventListener("click", alertClose);
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // ketika tombol sumbit diklik
+        btnkirim.classList.toggle("hidden");
+        btnloading.classList.toggle("hidden");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // ketika sukses
+            btnkirim.classList.toggle("hidden");
+            btnloading.classList.toggle("hidden");
+            alert.classList.toggle("invisible");
+            console.log("Success!", response);
+            form.reset();
+          })
+
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <!--Btn Menu-->
+    <script>
+      const btn = document.querySelector("#btnmenu");
+      const btnabout = document.querySelector("#btnabout");
+      const btnporto = document.querySelector("#btnporto");
+      const btncontact = document.querySelector("#btncontact");
+      const menu = document.querySelector("#navbarmobile");
+      function hiddenMenu() {
+        menu.classList.toggle("hidden");
+      }
+      btn.addEventListener("click", hiddenMenu);
+      btnabout.addEventListener("click", hiddenMenu);
+      btnporto.addEventListener("click", hiddenMenu);
+      btncontact.addEventListener("click", hiddenMenu);
+    </script>
+  </body>
+</html>
