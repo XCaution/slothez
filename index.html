@@ -92,7 +92,7 @@
         <!-- Container Portfolio -->
         <div class="bg-slate-700 w-full grid gap-y-4 pb-4 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4 justify-items-center">
           <!-- Card 1 -->
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1500">
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img class="rounded-t-lg" src="/public/asset/foto1.jpg" alt="" />
             </a>
@@ -113,7 +113,7 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1500">
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img class="rounded-t-lg" src="/public/asset/foto1.jpg" alt="" />
             </a>
@@ -134,7 +134,7 @@
             </div>
           </div>
           <!-- Card 3 -->
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1500">
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img class="rounded-t-lg" src="/public/asset/foto1.jpg" alt="" />
             </a>
@@ -155,7 +155,7 @@
             </div>
           </div>
           <!-- Card 4 -->
-          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700" data-aos="flip-left" data-aos-delay="100" data-aos-duration="1500">
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <img class="rounded-t-lg" src="/public/asset/foto1.jpg" alt="" />
             </a>
@@ -204,7 +204,7 @@
                 </svg>
               </button>
             </div>
-            <form name="submit-to-google-sheet ">
+            <form name="submit-to-google-sheet " id="googleSheet">
               <!-- UserName -->
               <div class="relative z-0 mb-6 w-full group" data-aos="fade-down">
                 <input
@@ -305,7 +305,7 @@
     <!-- Form -->
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbwEQH74y5KoETxggfMvsC4w2aKwnrxwMQBIFCUjx4iudIrwi-NUjXt1hilTqcrR35yGOQ/exec";
-      const form = document.forms["submit-to-google-sheet"];
+      const form = document.forms.namedItem("googleSheet");
       const btnkirim = document.querySelector(".btn-kirim");
       const btnloading = document.querySelector(".btn-loading");
       const alert = document.querySelector("#alert");
@@ -330,7 +330,6 @@
             console.log("Success!", response);
             form.reset();
           })
-
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
